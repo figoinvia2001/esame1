@@ -1,0 +1,11 @@
+<!-- aggiungi.component.html -->
+<div>
+  <input
+    type="number"
+    placeholder="Posizione"
+    [(ngModel)]="nuovoLibro.posizione"
+  />
+  <input type="text" placeholder="Autore" [(ngModel)]="nuovoLibro.autore" />
+  <input type="text" placeholder="Titolo" [(ngModel)]="nuovoLibro.titolo" />
+  <button (click)="aggiungiLibro()">Aggiungi libro</button>
+</div>

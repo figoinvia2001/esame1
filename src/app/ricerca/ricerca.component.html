@@ -1,0 +1,9 @@
+<!-- ricerca.component.html -->
+<div>
+  <input
+    type="text"
+    placeholder="Cerca per autore o titolo"
+    [(ngModel)]="searchString"
+  />
+  <button (click)="searchDocuments()">Cerca</button>
+</div>

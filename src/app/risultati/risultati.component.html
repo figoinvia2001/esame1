@@ -1,0 +1,11 @@
+<!-- risultati-ricerca.component.html -->
+<div *ngIf="results && results.length > 0">
+  <ul>
+    <li *ngFor="let libro of results">
+      Autore: {{ libro.autore }}, Titolo: {{ libro.titolo }}
+    </li>
+  </ul>
+</div>
+<div *ngIf="results && results.length === 0">
+  Nessun libro corrispondente trovato.
+</div>
